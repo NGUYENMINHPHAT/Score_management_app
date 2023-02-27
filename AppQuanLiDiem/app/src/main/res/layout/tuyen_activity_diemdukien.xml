@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white"
+    android:stretchColumns="1">
+    <TableRow>
+        <TextView
+            android:text="@string/tv_diemdukien"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_span="2"
+            android:gravity="center"
+            android:layout_marginTop="40dp"/>
+    </TableRow>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_diemdukien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            android:background="@drawable/border_btn"
+
+            android:text="@string/tv_diemdukien"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/btn_diemcaithien"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            android:background="@drawable/border_btn"
+            android:text="@string/tv_diemcaithien"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+    <TableRow>
+        <TextView
+            android:id="@+id/mt_chonmh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="1"
+            android:text="@string/tv_chonmonhoc"
+            android:textColor="@color/colorTransparent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/spchonmon"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/tv_nhapdiemdukien"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/sodiemdukien"
+            android:hint="@string/dt_nhapketqua"
+            android:inputType="numberDecimal"
+            android:textSize="17sp"
+            android:autofillHints="" />
+    </TableRow>
+
+
+    <TableRow>
+        <TextView
+            android:text="@string/tv_tinchi"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/sptinchi"/>
+    </TableRow>
+    <Button
+        android:id="@+id/btn_nhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_nhap"
+        android:textSize="17sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_btn_blue"
+        android:textColor="@android:color/white"/>
+
+    <TableRow>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="@string/tv_trungbinhmon"
+            android:textColor="@color/teal_700"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="40dp"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="50dp"
+            android:text="@string/tv_trungbinhhocki"
+            android:textColor="@color/teal_700"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/diemchu"
+            android:gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="@color/item_1"
+            android:textStyle="bold"
+            android:textSize="40sp">
+        </TextView>
+        <TextView
+            android:id="@+id/trungbinhhocki"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:textColor="@color/item_1"
+            android:textStyle="bold"
+            android:textSize="40sp">
+        </TextView>
+    </TableRow>
+
+</TableLayout>
